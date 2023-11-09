@@ -16,4 +16,4 @@ class Application():
         for worker in self.workers:
             if any(str(value).lower().find(condition.lower()) != -1 for value in vars(worker).values()):
                 workers.append(worker)
-        return workers
+        return ["BAD RESULT"]
